@@ -1,0 +1,5 @@
+
+protoc -I=$SRC_DIR --java_out=$DST_DIR $SRC_DIR/HelloService.proto
+
+protoc -I=src/main/resources --java_out=src/main/java src/main/resources/oi.proto
+

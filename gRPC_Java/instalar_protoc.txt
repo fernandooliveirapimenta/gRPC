@@ -1,0 +1,10 @@
+ownload the protobuf-2.4.1 from https://protobuf.googlecode.com/files/protobuf-2.4.1.tar.gz
+Extract the tar.gz file.
+$cd ~/Downloads/protobuf-2.4.1
+$./configure
+$make
+$make check
+$sudo make install
+$which protoc
+$protoc --version
+Steps 4-7 are from the README.txt file from the protobuf tarball.

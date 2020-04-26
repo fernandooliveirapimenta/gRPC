@@ -2,10 +2,10 @@ package br.com.fernando.gRPC;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+//@SpringBootApplication
 public class Main {
 
-    public static void main(String[] args) {
-
-    }
+//    public static void main(String[] args) {
+//
+//    }
 }

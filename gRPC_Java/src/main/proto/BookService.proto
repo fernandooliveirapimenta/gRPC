@@ -1,0 +1,26 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package br.com.fernando.gRPC;
+
+message BookArray {
+    repeated BookResponse livros = 1;
+}
+
+message BookRequest {
+    int64 id = 1;
+    string nome = 2;
+    string autor = 3;
+}
+
+message BookResponse {
+    int64 id = 1;
+    string nome = 2;
+    string autor = 3;
+}
+
+service BookService {
+    rpc salvar(BookRequest) returns (BookResponse);
+    rpc atualizar(BookRequest) returns (BookResponse);
+    rpc deletar(BookRequest) returns (BookResponse);
+    rpc buscar(BookRequest) returns (BookArray);
+}

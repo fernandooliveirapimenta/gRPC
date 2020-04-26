@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  pgsql:
+    image: postgres:10.4
+    # volumes:
+    #     - ~/volumes/jhipster/TwentyOnePoints/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=fosilva
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
